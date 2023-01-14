@@ -13,7 +13,6 @@ export default function Docs({database}) {
     const collectionRef = collection(database, 'docsData');
 
     const isMounted = useRef();
-
     const [docsData, setDocsData] = useState([]);
 
     let navigate = useNavigate();
@@ -37,7 +36,6 @@ export default function Docs({database}) {
                 return {...doc.data(), id: doc.id}
             }))
         })
-
     };
 
     useEffect(() => {
