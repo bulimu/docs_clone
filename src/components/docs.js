@@ -4,8 +4,6 @@ import { addDoc, collection, onSnapshot } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
 
 
-
-
 export default function Docs({database}) {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
@@ -58,8 +56,6 @@ export default function Docs({database}) {
 
         <div className='docs-main'>
             <h1>Docs Clone</h1>
-
-
 
             <button className='add-docs' onClick={handleOpen}>
                 Add a Document
